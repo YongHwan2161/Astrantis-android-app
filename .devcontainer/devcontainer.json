@@ -1,0 +1,13 @@
+{
+  "name": "Android Development",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "settings": {},
+  "extensions": [
+    "vscjava.vscode-java-pack",
+    "ms-androidtools.vscode-android-emulator"
+  ],
+  "forwardPorts": [],
+  "postCreateCommand": "./.devcontainer/postCreate.sh"
+}
