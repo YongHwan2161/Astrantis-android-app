@@ -3,11 +3,29 @@
   "build": {
     "dockerfile": "Dockerfile"
   },
-  "settings": {},
-  "extensions": [
-    "vscjava.vscode-java-pack",
-    "ms-androidtools.vscode-android-emulator"
-  ],
-  "forwardPorts": [],
-  "postCreateCommand": "./.devcontainer/postCreate.sh"
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "terminal.integrated.profiles.linux": {
+          "bash": {
+            "path": "/bin/bash"
+          }
+        },
+        "java.home": "/usr/lib/jvm/java-11-openjdk-amd64"
+      },
+      "extensions": [
+        "vscjava.vscode-java-pack",
+        "ms-vscode.cpptools",
+        "ms-azuretools.vscode-docker",
+        "ms-vscode-remote.remote-containers",
+        "redhat.java",
+        "visualstudioexptteam.vscodeintellicode",
+        "googlecloudtools.cloudcode",
+        "eamodio.gitlens"
+      ]
+    }
+  },
+  "remoteUser": "vscode",
+  "updateRemoteUserUID": true
 }
