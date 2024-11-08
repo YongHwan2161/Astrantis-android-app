@@ -3,6 +3,7 @@
   "build": {
     "dockerfile": "Dockerfile"
   },
+  "features": {},
   "customizations": {
     "vscode": {
       "settings": {
