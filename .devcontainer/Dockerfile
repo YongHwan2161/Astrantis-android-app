@@ -1,16 +1,6 @@
 # Dockerfile
 FROM ubuntu:20.04
 
-LABEL devcontainer.metadata="{\
-    \"capAdd\": [\"SYS_PTRACE\"], \
-    \"remoteUser\": \"vscode\", \
-    \"customizations\": { \
-        \"vscode\": { \
-            \"extensions\": [\"ms-azuretools.vscode-docker\"] \
-        } \
-    } \
-}"
-
 # Set environment variables
 ENV DEBIAN_FRONTEND=noninteractive
 ENV ANDROID_SDK_ROOT=/usr/local/android-sdk-linux
